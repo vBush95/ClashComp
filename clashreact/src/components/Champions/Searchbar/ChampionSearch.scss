@@ -1,0 +1,21 @@
+.searchbar {
+    display: grid;
+    background-color: rgb(255, 51, 51);
+    grid-template-columns: 3fr, 1fr;
+    grid-column: 1 ;
+    grid-row: 1;
+    padding: 0.5rem;  
+
+}
+
+.searchbarText {
+    grid-column: 1 ;
+    place-self: start;
+}
+
+.championSearch {
+    grid-column: 2;
+    width: 200px;
+    justify-self: end;
+}
+

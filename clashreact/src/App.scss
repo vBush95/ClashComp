@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.App {
+    display: grid;
+    grid-template-columns: repeat(20, minmax(5vw, 1fr)); 
+    grid-template-rows: repeat(20, minmax(5vh, 1fr));
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: aqua;  
+}
+
+.App-header {
+    background-color: brown;
+    padding: 0.5rem;
+    grid-column: 1 / span 20;
+    grid-row: 1 ;
+    // text-align: center;
+    justify-content: center;
+
+}
+
+ main {
+    display: grid;
+    grid-column: 4 / span 14;
+    grid-row: 2 / 20; 
+    grid-template-columns: minmax(1rem, 10vw) minmax(auto, 50vw) minmax(10rem, 10vw);
+    grid-template-rows: minmax(1rem, 1fr);
+  
+    .rechts {
+        grid-column: 3;
+        grid-row: 1;
+        background-color: blueviolet;
+        padding: 0.5rem;
+
+    }
+    
+    
+} 
+
+
+footer {
+    grid-column: 1 / span 20;
+    grid-row: 20 / span 1; 
+    background-color: cadetblue;
+    padding: 0.5rem;
+}
