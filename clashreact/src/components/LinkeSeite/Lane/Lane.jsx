@@ -1,28 +1,39 @@
 import React from "react";
 import { ItemTypes } from "../../../ItemTypes";
-import ChampionFrame from "../../Champions/ChampionFrame/ChampionFrame";
+import ChampionIcon from "./ChampionIcon/ChampionIcon";
 
-
+import "./Lane.scss";
+import LaneIcon from "./LaneIcon/LaneIcon";
 
 const Lane = ({ key , status, classes}) => {
 
-  //   // const ref = useRef(null);
-  //   const [, drop] = useDrop({
+    // const ref = useRef(null);
+  //   const [{isOver}, drop] = useDrop({
   //   accept: ItemTypes.CHAMPION,
   //   drop(item) {
   //     changeLane(item, status);
-  //   }
+  //   },
+  //   collect: (monitor) => ({
+  //     isOver: monitor.isOver(),
+  //     canDrop: monitor.canDrop(),
+  //     draggingColor: monitor.getItemType(),
+  //   }),
   // });
-  // // drop(ref);
+
+  // const opacity = isOver ? 1 : 0.7;
+  // let backgroundColor = "#fff";
+ 
+  // drop(ref);
 
     return(
 
-        <div style={classes.test3}>
-
-        status:{status}
-
-          <div style={classes.test}>
-            <ChampionFrame name={"Ahri"}/>
+        <div style={classes.test3} className="lane">
+        <div className="left">
+          <LaneIcon />
+        </div>
+        
+          <div style={classes.test} className="right">
+            <ChampionIcon name={"Ahri"}/>
           </div>
         </div>
 

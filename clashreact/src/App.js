@@ -4,7 +4,7 @@ import './App.scss';
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 
-import Champion from "./components/Champions/Champion";
+import ChampionHexagon from "./components/Champions/ChampionHexagon";
 import LinkeSeite from "./components/LinkeSeite/LinkeSeite";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 
             <LinkeSeite className="links" /> 
 
-          <Champion /> 
+          <ChampionHexagon /> 
 
           <div className="rechts">
            rechts

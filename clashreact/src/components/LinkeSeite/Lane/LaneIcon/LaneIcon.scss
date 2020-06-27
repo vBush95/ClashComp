@@ -1,0 +1,27 @@
+.laneIcon {
+    all: initial;
+    * {
+      all: unset;
+    }
+  }
+
+  .imageLeft {
+      width: 2.3rem;
+  }
+
+  .laneIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      background-color: rgba(255, 255, 255, 0.507);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+.laneIconContainer {
+    display:  block;
+    width: 100%;
+    height: fit-content;
+    //background-color: rgb(61, 61, 61);
+}

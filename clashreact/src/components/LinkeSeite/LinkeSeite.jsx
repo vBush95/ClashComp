@@ -1,30 +1,40 @@
-import React, {useState, useCallback} from "react";
+import React, {useState, useCallback, useReducer} from "react";
 
 import DropArea from "../DropArea";
 
 import "./LinkeSeite.scss";
 import Champion from "../Champions/Champion";
 import Lane from "./Lane/Lane";
+import LaneReducer from "./Lane/LaneReducer";
 
 const LinkeSeite = () => {
 
-    const lanes = ["top","jungle","mid","adc","support"];
+    const [laneState, dispatch] = useReducer(LaneReducer, [] );
+
+    const lanes = ["Top","Jungle","Middle","Bottom","Support"];
 
     const classes = {
         test: {
             // margin: "5px",
-            height: "100px",
-            width: "100px",
-            backgroundColor: "green",
+            // height: "100px",
+            // width: "100px",
+            // backgroundColor: "green",
+            //padding: "0.5rem"
         },
         test2: {
-            height:  "150px",
+            //height:  "150px",
             maxWidth: "100%",
+            borderRadius: " 0.25rem",
+            textAlign:"center",
             backgroundColor: "blue",
-            textAlign:"center"
+            //padding: "0.5rem",
+            color: "white"
         },
         test3: {
-            width: "80%"
+           // width: "100%",
+            // backgroundColor: "rgb(22, 22, 22)",
+            borderRadius: " 0.25rem",
+            color: "white"
         }
     };
 
@@ -55,7 +65,8 @@ const LinkeSeite = () => {
     return(
         <div className="links">
             {lanes.map((lane) => (
-                <div classes={classes.test2}>
+                <div style={classes.test2}>
+                {lane}
                 <Lane
                     key={lane}
                     status={lane}

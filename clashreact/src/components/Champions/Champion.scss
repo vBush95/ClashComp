@@ -1,63 +1,63 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+// *{
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//   }
 
 
 
-.middleColumn {
+// .middleColumn {
   
-    grid-column: 2;
-    grid-row: 1;
+//     grid-column: 2;
+//     grid-row: 1;
 
-    display: grid;
-    grid-template-columns: minmax(1rem, 1fr);
-    grid-template-rows: min-content minmax(1rem, 1fr);
-}
+//     display: grid;
+//     grid-template-columns: minmax(1rem, 1fr);
+//     grid-template-rows: min-content minmax(1rem, 1fr);
+// }
 
-.championContainer {
-     display: grid;
-     grid-column: 1 ;
-     grid-row: 2;
+// .championContainer {
+//      display: grid;
+//      grid-column: 1 ;
+//      grid-row: 2;
 
-     background-color: rgb(87, 87, 87);
-     grid-template-columns: repeat(auto-fill, minmax( 6em, 1fr));
-     grid-template-rows: auto;
-     gap: 0.5rem 0.5rem;
-     padding: 0.5rem;
-     overflow-y: scroll;
-     place-content: start;
+//      background-color: rgb(87, 87, 87);
+//      grid-template-columns: repeat(auto-fill, minmax( 6em, 1fr));
+//      grid-template-rows: auto;
+//      gap: 0.5rem 0.5rem;
+//      padding: 0.5rem;
+//      overflow-y: scroll;
+//      place-content: start;
 
-    scrollbar-color: rgb(10, 10, 10) rgb(87, 87, 87);
-    scrollbar-width: thin;
-}
+//     scrollbar-color: rgb(10, 10, 10) rgb(87, 87, 87);
+//     scrollbar-width: thin;
+// }
 
 
-.championItem {
-    width: fit-content;
-    height: fit-content;
-    background-color: rgb(173, 173, 173);
-    padding: 0.25rem;
-}
+// .championItem {
+//     width: fit-content;
+//     height: fit-content;
+//     background-color: rgb(173, 173, 173);
+//     padding: 0.25rem;
+// }
 
-.championItem:hover {
-    background-color: rgb(255, 72, 72);
-}
+// .championItem:hover {
+//     background-color: rgb(255, 72, 72);
+// }
 
-/* width */
-.championContainer::-webkit-scrollbar {
-    width: 5px;
-  }
+// /* width */
+// .championContainer::-webkit-scrollbar {
+//     width: 5px;
+//   }
   
-  /* Track */
-  .championContainer::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-  }
+//   /* Track */
+//   .championContainer::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px grey;
+//   }
   
-  /* Handle */
-  .championContainer::-webkit-scrollbar-thumb {
-    background: rgb(10, 10, 10);
-  }
+//   /* Handle */
+//   .championContainer::-webkit-scrollbar-thumb {
+//     background: rgb(10, 10, 10);
+//   }
 
 
